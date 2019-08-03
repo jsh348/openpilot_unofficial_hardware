@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 4)
+    (drawings 5)
     (tracks 81)
     (zones 0)
     (modules 6)
@@ -317,6 +317,9 @@
     )
   )
 
+  (gr_text jsh348 (at 80.01 90.17) (layer B.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+  )
   (gr_line (start 60.96 110.49) (end 60.96 86.36) (layer Edge.Cuts) (width 0.05) (tstamp 5D3A2E26))
   (gr_line (start 100.33 110.49) (end 60.96 110.49) (layer Edge.Cuts) (width 0.05))
   (gr_line (start 100.33 86.36) (end 100.33 110.49) (layer Edge.Cuts) (width 0.05))

@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:minimal-toyota-giraffe-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -161,10 +162,6 @@ Wire Wire Line
 Wire Wire Line
 	2550 2500 2900 2500
 Wire Wire Line
-	2350 2600 2900 2600
-Wire Wire Line
-	2900 2700 2350 2700
-Wire Wire Line
 	2550 2800 2550 3050
 Wire Wire Line
 	2550 3050 2050 3050
@@ -217,4 +214,16 @@ Wire Wire Line
 	3900 2600 4500 2600
 Text Notes 4550 3000 0    50   ~ 0
 Const 12V\n-Comma Power\n-Mirror Pin\n-Sun Roof
+Wire Wire Line
+	2350 2700 2600 2700
+Wire Wire Line
+	2600 2700 2700 2600
+Wire Wire Line
+	2700 2600 2900 2600
+Wire Wire Line
+	2900 2700 2700 2700
+Wire Wire Line
+	2700 2700 2600 2600
+Wire Wire Line
+	2600 2600 2350 2600
 $EndSCHEMATC

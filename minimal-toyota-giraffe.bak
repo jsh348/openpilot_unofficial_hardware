@@ -14,34 +14,12 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L giraffe:panda P1
-U 1 1 5D39E9B2
-P 3400 3100
-F 0 "P1" V 2535 3100 50  0000 C CNN
-F 1 "panda" V 2626 3100 50  0000 C CNN
-F 2 "giraffe:panda" V 2627 3100 50  0001 C CNN
-F 3 "" V 2550 3100 50  0001 C CNN
-	1    3400 3100
-	0    1    1    0   
-$EndComp
-$Comp
-L giraffe:MOBILEEYE J2
-U 1 1 5D3A2FFC
-P 3400 4950
-F 0 "J2" H 3400 5515 50  0000 C CNN
-F 1 "MOBILEEYE" H 3400 5424 50  0000 C CNN
-F 2 "" H 3000 5400 50  0001 C CNN
-F 3 "" H 3000 5400 50  0001 C CNN
-	1    3400 4950
-	1    0    0    -1  
-$EndComp
-$Comp
 L giraffe:MOBILEEYE J3
 U 1 1 5D3A3B5E
 P 5900 4950
 F 0 "J3" H 5900 5515 50  0000 C CNN
 F 1 "MOBILEEYE" H 5900 5424 50  0000 C CNN
-F 2 "" H 5500 5400 50  0001 C CNN
+F 2 "giraffe:MobilEye" H 5500 5400 50  0001 C CNN
 F 3 "" H 5500 5400 50  0001 C CNN
 	1    5900 4950
 	1    0    0    -1  
@@ -103,8 +81,6 @@ Text Label 4300 5000 2    50   ~ 0
 GND
 Wire Wire Line
 	3900 2500 4250 2500
-Wire Wire Line
-	3900 2600 4250 2600
 Wire Wire Line
 	3900 3600 4250 3600
 Wire Wire Line
@@ -204,4 +180,41 @@ Text Label 1950 3250 1    50   ~ 0
 DFU
 Text Label 2550 3700 0    50   ~ 0
 IGN
+$Comp
+L giraffe:panda P1
+U 1 1 5D39E9B2
+P 3400 3100
+F 0 "P1" V 2535 3100 50  0000 C CNN
+F 1 "panda" V 2626 3100 50  0000 C CNN
+F 2 "giraffe:panda" V 2627 3100 50  0001 C CNN
+F 3 "" V 2550 3100 50  0001 C CNN
+	1    3400 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L giraffe:MOBILEEYE J2
+U 1 1 5D3A2FFC
+P 3400 4950
+F 0 "J2" H 3400 5515 50  0000 C CNN
+F 1 "MOBILEEYE" H 3400 5424 50  0000 C CNN
+F 2 "giraffe:MobilEye" H 3000 5400 50  0001 C CNN
+F 3 "" H 3000 5400 50  0001 C CNN
+	1    3400 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L giraffe:Power U1
+U 1 1 5D3CE919
+P 4500 2550
+F 0 "U1" H 4687 2725 50  0000 C CNN
+F 1 "Power" H 4687 2634 50  0000 C CNN
+F 2 "giraffe:12VIN" H 4500 2550 50  0001 C CNN
+F 3 "" H 4500 2550 50  0001 C CNN
+	1    4500 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 2600 4500 2600
+Text Notes 4550 3000 0    50   ~ 0
+Const 12V\n-Comma Power\n-Mirror Pin\n-Sun Roof
 $EndSCHEMATC

@@ -96,10 +96,6 @@ Text Label 4250 2600 2    50   ~ 0
 12VIN
 Text Label 4250 2500 2    50   ~ 0
 GND
-Wire Wire Line
-	2900 3400 2550 3400
-Wire Wire Line
-	2900 2800 2550 2800
 Text Label 4250 3900 2    50   ~ 0
 CAN1_H
 Text Label 4250 3800 2    50   ~ 0
@@ -120,8 +116,6 @@ Text Label 2500 5200 0    50   ~ 0
 CAN2_H
 Text Label 5000 5200 0    50   ~ 0
 CAN2_H
-Text Label 2550 2800 0    50   ~ 0
-GND
 Text Label 2550 3400 0    50   ~ 0
 GND
 Text Label 2550 3800 0    50   ~ 0
@@ -144,36 +138,9 @@ Wire Wire Line
 	2350 4000 2100 4000
 Wire Wire Line
 	2350 3900 2900 3900
-$Comp
-L Connector:USB_A J1
-U 1 1 5D3B6FC7
-P 2050 2600
-F 0 "J1" H 2107 3067 50  0000 C CNN
-F 1 "USB_A" H 2107 2976 50  0000 C CNN
-F 2 "giraffe:USB" H 2200 2550 50  0001 C CNN
-F 3 " ~" H 2200 2550 50  0001 C CNN
-	1    2050 2600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2350 2400 2550 2400
-Wire Wire Line
-	2550 2400 2550 2500
-Wire Wire Line
-	2550 2500 2900 2500
-Wire Wire Line
-	2550 2800 2550 3050
-Wire Wire Line
-	2550 3050 2050 3050
-Wire Wire Line
-	2050 3050 2050 3000
-Wire Wire Line
-	1950 3000 1950 3250
 Wire Wire Line
 	3900 2800 4250 2800
 Text Label 4250 2800 2    50   ~ 0
-DFU
-Text Label 1950 3250 1    50   ~ 0
 DFU
 Text Label 2550 3700 0    50   ~ 0
 IGN
@@ -202,17 +169,15 @@ $EndComp
 $Comp
 L giraffe:Power U1
 U 1 1 5D3CE919
-P 4500 2550
-F 0 "U1" H 4687 2725 50  0000 C CNN
-F 1 "Power" H 4687 2634 50  0000 C CNN
-F 2 "giraffe:12VIN" H 4500 2550 50  0001 C CNN
-F 3 "" H 4500 2550 50  0001 C CNN
-	1    4500 2550
+P 4250 2550
+F 0 "U1" H 4437 2725 50  0001 C CNN
+F 1 "Power" H 4437 2634 50  0001 C CNN
+F 2 "giraffe:12VIN" H 4250 2550 50  0001 C CNN
+F 3 "" H 4250 2550 50  0001 C CNN
+	1    4250 2550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3900 2600 4500 2600
-Text Notes 4550 3000 0    50   ~ 0
+Text Notes 4650 2700 0    50   ~ 0
 Const 12V\n-Comma Power\n-Mirror Pin\n-Sun Roof
 Wire Wire Line
 	2350 2700 2600 2700
@@ -226,4 +191,87 @@ Wire Wire Line
 	2700 2700 2600 2600
 Wire Wire Line
 	2600 2600 2350 2600
+$Comp
+L giraffe:USB U2
+U 1 1 5D49EE3F
+P 2150 2400
+F 0 "U2" H 2208 2525 50  0000 C CNN
+F 1 "USB" H 2208 2434 50  0000 C CNN
+F 2 "giraffe:USB" H 2150 2400 50  0001 C CNN
+F 3 "" H 2150 2400 50  0001 C CNN
+	1    2150 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 4800 2500 4800
+Wire Wire Line
+	2850 4900 2500 4900
+Wire Wire Line
+	2850 5000 2500 5000
+Wire Wire Line
+	3950 4800 4300 4800
+Wire Wire Line
+	3950 4900 4300 4900
+Wire Wire Line
+	5350 4800 5000 4800
+Wire Wire Line
+	5350 4900 5000 4900
+Wire Wire Line
+	5350 5000 5000 5000
+Wire Wire Line
+	6450 4800 6800 4800
+Wire Wire Line
+	6450 4900 6800 4900
+Text Label 5000 4800 0    50   ~ 0
+2
+Text Label 5000 4900 0    50   ~ 0
+3
+Text Label 5000 5000 0    50   ~ 0
+4
+Text Label 2500 4800 0    50   ~ 0
+2
+Text Label 2500 4900 0    50   ~ 0
+3
+Text Label 2500 5000 0    50   ~ 0
+4
+Text Label 4300 4800 2    50   ~ 0
+8
+Text Label 4300 4900 2    50   ~ 0
+9
+Text Label 6800 4800 2    50   ~ 0
+8
+Text Label 6800 4900 2    50   ~ 0
+9
+$Comp
+L Jumper:SolderJumper_2_Open JP1
+U 1 1 5D4ABECF
+P 4400 2800
+F 0 "JP1" H 4400 2600 50  0001 C CNN
+F 1 "Paw_Boot" H 4400 2900 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4400 2800 50  0001 C CNN
+F 3 "~" H 4400 2800 50  0001 C CNN
+	1    4400 2800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2350 2800 2900 2800
+Wire Wire Line
+	2900 3400 2550 3400
+Text Label 2550 2800 0    50   ~ 0
+GND
+Wire Wire Line
+	2350 2500 2650 2500
+Wire Wire Line
+	3900 2600 4250 2600
+Wire Wire Line
+	5500 2800 5500 2050
+Wire Wire Line
+	5500 2050 2650 2050
+Wire Wire Line
+	2650 2050 2650 2500
+Wire Wire Line
+	4550 2800 5500 2800
+Connection ~ 2650 2500
+Wire Wire Line
+	2650 2500 2900 2500
 $EndSCHEMATC

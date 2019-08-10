@@ -1,0 +1,1 @@
+Packing all the electronics from the [Zorro Sensor](https://github.com/zorrobyte/betterToyotaAngleSensorForOP) all on one board.

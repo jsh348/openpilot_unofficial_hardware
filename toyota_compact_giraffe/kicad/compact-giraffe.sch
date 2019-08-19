@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:minimal-toyota-giraffe-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -179,18 +178,6 @@ F 3 "" H 4250 2550 50  0001 C CNN
 $EndComp
 Text Notes 4650 2700 0    50   ~ 0
 Const 12V\n-Comma Power\n-Mirror Pin\n-Sun Roof
-Wire Wire Line
-	2350 2700 2600 2700
-Wire Wire Line
-	2600 2700 2700 2600
-Wire Wire Line
-	2700 2600 2900 2600
-Wire Wire Line
-	2900 2700 2700 2700
-Wire Wire Line
-	2700 2700 2600 2600
-Wire Wire Line
-	2600 2600 2350 2600
 $Comp
 L giraffe:USB U2
 U 1 1 5D49EE3F
@@ -257,8 +244,6 @@ Wire Wire Line
 	2350 2800 2900 2800
 Wire Wire Line
 	2900 3400 2550 3400
-Text Label 2550 2800 0    50   ~ 0
-GND
 Wire Wire Line
 	2350 2500 2650 2500
 Wire Wire Line
@@ -274,4 +259,16 @@ Wire Wire Line
 Connection ~ 2650 2500
 Wire Wire Line
 	2650 2500 2900 2500
+Wire Wire Line
+	2900 2600 2350 2600
+Wire Wire Line
+	2350 2700 2900 2700
+Text Label 2400 2800 0    50   ~ 0
+GND
+Text Label 2400 2700 0    50   ~ 0
+D+
+Text Label 2400 2600 0    50   ~ 0
+D-
+Text Label 2400 2500 0    50   ~ 0
+5V
 $EndSCHEMATC

@@ -168,18 +168,6 @@ Wire Wire Line
 	2350 1150 2000 1150
 Text Notes 2300 750  0    100  ~ 0
 ICSP
-$Comp
-L Regulator_Linear:NCP1117-5.0_SOT223 U1
-U 1 1 5D46D7B7
-P 1550 5150
-F 0 "U1" H 1550 5392 50  0000 C CNN
-F 1 "NCP1117-5.0_SOT223" H 1550 5301 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 1550 5350 50  0001 C CNN
-F 3 "http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF" H 1650 4900 50  0001 C CNN
-F 4 "NCP1117ST50T3GOSCT-ND" H 1550 5150 50  0001 C CNN "Digi-Key Part Number"
-	1    1550 5150
-	1    0    0    -1  
-$EndComp
 Text Notes 1200 4800 0    100  ~ 0
 5V REG
 $Comp
@@ -315,70 +303,6 @@ Wire Wire Line
 	7300 2200 7300 2250
 Connection ~ 7300 2200
 $Comp
-L Device:Crystal_Small Y3
-U 1 1 5D48BC0B
-P 4750 2400
-F 0 "Y3" V 4796 2312 50  0000 R CNN
-F 1 "8MHz" V 4705 2312 50  0000 R CNN
-F 2 "Crystal:Crystal_SMD_Abracon_ABM3-2Pin_5.0x3.2mm_HandSoldering" H 4750 2400 50  0001 C CNN
-F 3 "~" H 4750 2400 50  0001 C CNN
-F 4 "535-10630-1-ND" H 4750 2400 50  0001 C CNN "Digi-Key Part Number"
-	1    4750 2400
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:C_Small C5
-U 1 1 5D48BC11
-P 4550 2250
-F 0 "C5" V 4321 2250 50  0000 C CNN
-F 1 "27pF" V 4412 2250 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4550 2250 50  0001 C CNN
-F 3 "~" H 4550 2250 50  0001 C CNN
-F 4 "1276-1086-1-ND " H 4550 2250 50  0001 C CNN "Digi-Key Part Number"
-	1    4550 2250
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C_Small C6
-U 1 1 5D48BC17
-P 4550 2550
-F 0 "C6" V 4413 2550 50  0000 C CNN
-F 1 "27pF" V 4412 2550 50  0001 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4550 2550 50  0001 C CNN
-F 3 "~" H 4550 2550 50  0001 C CNN
-F 4 "1276-1086-1-ND " H 4550 2550 50  0001 C CNN "Digi-Key Part Number"
-	1    4550 2550
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4650 2250 4750 2250
-Wire Wire Line
-	4750 2500 4750 2550
-Wire Wire Line
-	4750 2550 4650 2550
-Wire Wire Line
-	4750 2300 4750 2250
-Wire Wire Line
-	4450 2550 4400 2550
-Wire Wire Line
-	4400 2550 4400 2250
-Wire Wire Line
-	4400 2250 4450 2250
-Wire Wire Line
-	5100 2450 5050 2450
-Wire Wire Line
-	5050 2450 5050 2550
-Wire Wire Line
-	5050 2550 4750 2550
-Connection ~ 4750 2550
-Wire Wire Line
-	5100 2350 5050 2350
-Wire Wire Line
-	5050 2350 5050 2250
-Wire Wire Line
-	5050 2250 4750 2250
-Connection ~ 4750 2250
-$Comp
 L power:GND #PWR013
 U 1 1 5D49BBE0
 P 4400 3000
@@ -389,7 +313,6 @@ F 3 "" H 4400 3000 50  0001 C CNN
 	1    4400 3000
 	1    0    0    -1  
 $EndComp
-Connection ~ 4400 2550
 $Comp
 L Device:R_Small R5
 U 1 1 5D4A40B4
@@ -566,9 +489,6 @@ Text Label 1000 5150 0    50   ~ 0
 +12V
 Text Label 1550 5500 0    50   ~ 0
 GND
-Connection ~ 4400 2950
-Wire Wire Line
-	4400 2950 4400 2550
 Wire Wire Line
 	4400 3000 4400 2950
 Wire Wire Line
@@ -591,18 +511,6 @@ F 4 "N/A" H 5000 4250 50  0001 C CNN "Digi-Key Part Number"
 $EndComp
 Wire Wire Line
 	5700 2950 4400 2950
-$Comp
-L Interface_CAN_LIN:MCP2515-xSO U4
-U 1 1 5D479C62
-P 5700 2150
-F 0 "U4" H 5700 3131 50  0000 C CNN
-F 1 "MCP2515-xSO" H 5700 3040 50  0000 C CNN
-F 2 "Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm" H 5700 1250 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21801e.pdf" H 5800 1350 50  0001 C CNN
-F 4 "MCP2515T-I/SOCT-ND" H 5700 2150 50  0001 C CNN "Digi-Key Part Number"
-	1    5700 2150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6800 4400 6200 4400
 Wire Wire Line
@@ -767,7 +675,7 @@ U 1 1 5D5281D7
 P 9300 1750
 F 0 "J2" H 8970 1754 50  0000 R CNN
 F 1 "RJ45" H 8970 1845 50  0000 R CNN
-F 2 "Connector_RJ:RJ45_Amphenol_54602-x08_Horizontal" V 9300 1775 50  0001 C CNN
+F 2 "ZSS:Molex 855025008 RJ45" V 9300 1775 50  0001 C CNN
 F 3 "~" V 9300 1775 50  0001 C CNN
 F 4 "609-1046-ND" H 9300 1750 50  0001 C CNN "Digi-Key Part Number"
 	1    9300 1750
@@ -818,18 +726,6 @@ F 3 "~" H 1375 2500 50  0001 C CNN
 F 4 "490-17948-1-ND" H 1400 2500 50  0001 C CNN "Digi-Key Part Number"
 	1    1400 2500
 	0    1    1    0   
-$EndComp
-$Comp
-L Angle_Sensor:ATMEGA328PB-AU U2
-U 1 1 5D43444B
-P 2400 1950
-F 0 "U2" H 2375 2015 50  0000 C CNN
-F 1 "ATMEGA328PB-AU" H 2375 1924 50  0000 C CNN
-F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 2400 -500 50  0001 C CNN
-F 3 "" H 2400 -500 50  0001 C CNN
-F 4 "ATMEGA328PB-AU-ND" H 2400 1950 50  0001 C CNN "Digi-Key Part Number"
-	1    2400 1950
-	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	1800 2450 1800 2400
@@ -1025,34 +921,6 @@ F 4 "1276-1000-1-ND" H 8100 1200 50  0001 C CNN "Digi-Key Part Number"
 	1    8100 1200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4250 5250 4250 5600
-Wire Wire Line
-	3850 5250 3850 5600
-$Comp
-L Device:Crystal_GND24 Y2
-U 1 1 5D5A4D2A
-P 4050 5600
-F 0 "Y2" H 4244 5646 50  0000 L CNN
-F 1 "40MHz" H 4244 5555 50  0000 L CNN
-F 2 "Crystal:Crystal_SMD_Abracon_ABM8G-4Pin_3.2x2.5mm" H 4050 5600 50  0001 C CNN
-F 3 "~" H 4050 5600 50  0001 C CNN
-F 4 "535-13401-1-ND" H 4050 5600 50  0001 C CNN "Digi-Key Part Number"
-	1    4050 5600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4250 5600 4200 5600
-Connection ~ 4250 5600
-Wire Wire Line
-	4250 5600 4250 5700
-Wire Wire Line
-	3900 5600 3850 5600
-Connection ~ 3850 5600
-Wire Wire Line
-	3850 5600 3850 5700
-Wire Wire Line
-	4050 5800 4050 6000
 $Comp
 L power:GND #PWR0111
 U 1 1 5D5BC5A0
@@ -1119,6 +987,92 @@ F 2 "Resistor_SMD:R_0603_1608Metric" H 6400 3700 50  0001 C CNN
 F 3 "~" H 6400 3700 50  0001 C CNN
 F 4 "A130097CT-ND" H 6400 3700 50  0001 C CNN "Digi-Key Part Number"
 	1    6400 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Interface_CAN_LIN:MCP2515-xST U?
+U 1 1 5D717111
+P 5700 2150
+F 0 "U?" H 5700 3131 50  0000 C CNN
+F 1 "MCP2515-xST" H 5700 3040 50  0000 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 5700 1250 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21801e.pdf" H 5800 1350 50  0001 C CNN
+	1    5700 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Resonator_Small Y?
+U 1 1 5D72675F
+P 4800 2400
+F 0 "Y?" V 4495 2350 50  0000 C CNN
+F 1 "Resonator_Small" V 4586 2350 50  0000 C CNN
+F 2 "" H 4775 2400 50  0001 C CNN
+F 3 "~" H 4775 2400 50  0001 C CNN
+	1    4800 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5100 2350 5000 2350
+Wire Wire Line
+	5000 2350 5000 2300
+Wire Wire Line
+	5000 2300 4900 2300
+Wire Wire Line
+	5100 2450 5000 2450
+Wire Wire Line
+	5000 2450 5000 2500
+Wire Wire Line
+	5000 2500 4900 2500
+Wire Wire Line
+	4600 2400 4400 2400
+Wire Wire Line
+	4400 2400 4400 2950
+Connection ~ 4400 2950
+Wire Wire Line
+	4250 5250 4250 5550
+Wire Wire Line
+	3850 5250 3850 5550
+$Comp
+L Device:Crystal_Small Y?
+U 1 1 5D73B9B9
+P 4050 5550
+F 0 "Y?" H 4050 5775 50  0000 C CNN
+F 1 "40MHz" H 4050 5684 50  0000 C CNN
+F 2 "Crystal:Crystal_SMD_Abracon_ABM3-2Pin_5.0x3.2mm" H 4050 5550 50  0001 C CNN
+F 3 "~" H 4050 5550 50  0001 C CNN
+	1    4050 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 5550 4250 5550
+Connection ~ 4250 5550
+Wire Wire Line
+	4250 5550 4250 5700
+Wire Wire Line
+	3950 5550 3850 5550
+Connection ~ 3850 5550
+Wire Wire Line
+	3850 5550 3850 5700
+$Comp
+L Angle_Sensor:ATMEGA328P-AU IC?
+U 1 1 5D74BDEC
+P 2400 1950
+F 0 "IC?" H 2375 2015 50  0000 C CNN
+F 1 "ATMEGA328P-AU" H 2375 1924 50  0000 C CNN
+F 2 "" H 2400 -500 50  0001 C CNN
+F 3 "" H 2400 -500 50  0001 C CNN
+	1    2400 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:LM7805_TO220 U?
+U 1 1 5D74D832
+P 1550 5150
+F 0 "U?" H 1550 5392 50  0000 C CNN
+F 1 "LM7805_TO220" H 1550 5301 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 1550 5375 50  0001 C CIN
+F 3 "http://www.fairchildsemi.com/ds/LM/LM7805.pdf" H 1550 5100 50  0001 C CNN
+	1    1550 5150
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

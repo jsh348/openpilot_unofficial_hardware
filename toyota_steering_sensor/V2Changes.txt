@@ -1,0 +1,6 @@
+SMD RJ45 to save space
+MCP2515 use 20MHz resonator
+Atmega328PB --> Atmega328P
+use a easier to had solder 40MHz crystal
+5V regualtor 1117 --> 7805 remove the need for copper pour heat sink, also could drop in repace with buck converter depend on noise
+FTDI output for easy debug and tests

@@ -665,7 +665,7 @@ F 0 "J2" H 8970 1754 50  0000 R CNN
 F 1 "RJ45" H 8970 1845 50  0000 R CNN
 F 2 "ZSS:Molex 855025008 RJ45" V 9300 1775 50  0001 C CNN
 F 3 "~" V 9300 1775 50  0001 C CNN
-F 4 "609-1046-ND" H 9300 1750 50  0001 C CNN "Digi-Key Part Number"
+F 4 "WM3547CT-ND" H 9300 1750 50  0001 C CNN "Digi-Key Part Number"
 	1    9300 1750
 	-1   0    0    1   
 $EndComp
@@ -985,6 +985,7 @@ F 0 "U4" H 5700 3131 50  0000 C CNN
 F 1 "MCP2515-xST" H 5700 3040 50  0000 C CNN
 F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 5700 1250 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21801e.pdf" H 5800 1350 50  0001 C CNN
+F 4 "MCP2515T-I/ST" H 0   0   50  0001 C CNN "Digi-Key Part Number"
 	1    5700 2150
 	1    0    0    -1  
 $EndComp
@@ -1017,6 +1018,7 @@ F 0 "Y2" H 4050 5775 50  0000 C CNN
 F 1 "40MHz" H 4050 5684 50  0000 C CNN
 F 2 "Crystal:Crystal_SMD_Abracon_ABM3-2Pin_5.0x3.2mm" H 4050 5550 50  0001 C CNN
 F 3 "~" H 4050 5550 50  0001 C CNN
+F 4 "535-9114-1-ND" H 0   0   50  0001 C CNN "Digi-Key Part Number"
 	1    4050 5550
 	1    0    0    -1  
 $EndComp
@@ -1038,6 +1040,7 @@ F 0 "IC1" H 2375 2015 50  0000 C CNN
 F 1 "ATMEGA328P-AU" H 2375 1924 50  0000 C CNN
 F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 2400 -500 50  0001 C CNN
 F 3 "" H 2400 -500 50  0001 C CNN
+F 4 "ATMEGA328P-AU-ND" H 0   0   50  0001 C CNN "Digi-Key Part Number"
 	1    2400 1950
 	1    0    0    -1  
 $EndComp
@@ -1049,6 +1052,7 @@ F 0 "U1" H 1550 5392 50  0000 C CNN
 F 1 "LM7805_TO220" H 1550 5301 50  0000 C CNN
 F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 1550 5375 50  0001 C CIN
 F 3 "http://www.fairchildsemi.com/ds/LM/LM7805.pdf" H 1550 5100 50  0001 C CNN
+F 4 "296-47192-ND" H 0   0   50  0001 C CNN "Digi-Key Part Number"
 	1    1550 5150
 	1    0    0    -1  
 $EndComp
@@ -1060,6 +1064,7 @@ F 0 "Y3" V 4495 2350 50  0000 C CNN
 F 1 "20MHz" V 4586 2350 50  0000 C CNN
 F 2 "Crystal:Resonator_SMD_muRata_CSTxExxV-3Pin_3.0x1.1mm" H 4775 2400 50  0001 C CNN
 F 3 "~" H 4775 2400 50  0001 C CNN
+F 4 "490-17957-1-ND" H 0   0   50  0001 C CNN "Digi-Key Part Number"
 	1    4800 2400
 	0    1    1    0   
 $EndComp
@@ -1071,6 +1076,7 @@ F 0 "U2" H 3722 3451 50  0000 R CNN
 F 1 "FTDI" H 3722 3360 50  0000 R CNN
 F 2 "Connector_PinHeader_1.27mm:PinHeader_1x06_P1.27mm_Vertical_SMD_Pin1Left" H 3850 3750 50  0001 C CNN
 F 3 "" H 3850 3750 50  0001 C CNN
+F 4 "N/A" H 0   0   50  0001 C CNN "Digi-Key Part Number"
 	1    3850 3750
 	-1   0    0    -1  
 $EndComp
@@ -1133,6 +1139,7 @@ F 0 "C5" V 971 1350 50  0000 C CNN
 F 1 ".1uF" V 1062 1350 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1200 1350 50  0001 C CNN
 F 3 "~" H 1200 1350 50  0001 C CNN
+F 4 "1276-1000-1-ND" H 0   0   50  0001 C CNN "Digi-Key Part Number"
 	1    1200 1350
 	0    1    1    0   
 $EndComp

@@ -1,22 +1,22 @@
-"Item","Qty","Reference(s)","Value","LibPart","Footprint","Datasheet","Digi-Key Part Number"
-"1","2","C1, C2","10uF","Device:C_Small","Capacitor_SMD:C_1210_3225Metric","~","490-14536-1-ND"
-"2","2","C3, C4","18pF","Device:C_Small","Capacitor_SMD:C_0603_1608Metric","~","1276-2208-1-ND"
-"3","2","C5, C6","27pF","Device:C_Small","Capacitor_SMD:C_0603_1608Metric","~","1276-1086-1-ND "
-"4","1","C7","1uF","Device:C_Small","Capacitor_SMD:C_0603_1608Metric","~","1276-1102-1-ND"
-"5","5","C8, C9, C10, C11, C12",".1uF","Device:C_Small","Capacitor_SMD:C_0603_1608Metric","~","1276-1000-1-ND"
-"6","1","D1","PWR_LED","Device:LED_Small","LED_SMD:LED_0805_2012Metric","~","475-1410-1-ND"
-"7","1","D2","D13_LED","Device:LED_Small","LED_SMD:LED_0805_2012Metric","~","475-1410-1-ND"
-"8","1","J1","AVR-ISP-6","Connector:AVR-ISP-6","Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical"," ~","N/A"
-"9","1","J2","RJ45","Connector:RJ45","Connector_RJ:RJ45_Amphenol_54602-x08_Horizontal","~","609-1046-ND"
-"10","4","R1, R5, R6, R7","10K","Device:R_Small","Resistor_SMD:R_0603_1608Metric","~","A130097CT-ND"
-"11","2","R2, R3","1K","Device:R_Small","Resistor_SMD:R_0603_1608Metric","~","A130091CT-ND "
-"12","1","R4","1M","Device:R_Small","Resistor_SMD:R_0603_1608Metric","~","A130109CT-ND "
-"13","1","U1","NCP1117-5.0_SOT223","Regulator_Linear:NCP1117-5.0_SOT223","Package_TO_SOT_SMD:SOT-223-3_TabPin2","http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF","NCP1117ST50T3GOSCT-ND"
-"14","1","U2","ATMEGA328PB-AU","Angle_Sensor:ATMEGA328PB-AU","Package_QFP:TQFP-32_7x7mm_P0.8mm","","ATMEGA328PB-AU-ND"
-"15","1","U3","LS7366R","Angle_Sensor:LS7366R","Package_SO:SOIC-14_3.9x8.7mm_P1.27mm","","N/A"
-"16","1","U4","MCP2515-xSO","Interface_CAN_LIN:MCP2515-xSO","Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm","http://ww1.microchip.com/downloads/en/DeviceDoc/21801e.pdf","MCP2515T-I/SOCT-ND"
-"17","1","U5","AS5047P","Angle_Sensor:AS5047P","Package_SO:TSSOP-14_4.4x5mm_P0.65mm","","AS5047P-ATSMCT-ND"
-"18","1","U6","TJA1050","Interface_CAN_LIN:TJA1051T-3","Package_SO:SOIC-8_3.9x4.9mm_P1.27mm","http://www.nxp.com/documents/data_sheet/TJA1051.pdf","568-10292-1-ND"
-"19","1","Y1","16MHz","Device:Resonator_Small","Crystal:Resonator_SMD_muRata_CSTxExxV-3Pin_3.0x1.1mm_HandSoldering","~","490-17948-1-ND"
-"20","1","Y2","40MHz","Device:Crystal_GND24","Crystal:Crystal_SMD_Abracon_ABM8G-4Pin_3.2x2.5mm","~","535-13401-1-ND"
-"21","1","Y3","8MHz","Device:Crystal_Small","Crystal:Crystal_SMD_Abracon_ABM3-2Pin_5.0x3.2mm_HandSoldering","~","535-10630-1-ND"
+Reference," Quantity"," Value"," Footprint"," Digi-Key Part Number"
+"C1 C2 ",2,10uF,C_1210,490-14536-1-ND
+"C12 C9 C8 C10 C11 C5 ",6,.1uF,C_0603,1276-1000-1-ND
+"C4 C3 ",2,18pF,C_0603,1276-2208-1-ND
+"C7 ",1,1uF,C_0603,490-12297-1-ND
+"D1 ",1,PWR_LED,LED_0805,475-1410-1-ND
+"D2 ",1,D13_LED,LED_0805,475-1410-1-ND
+"IC1 ",1,ATMEGA328P-AU,TQFP-32_7x7mm_P0.8mm,ATMEGA328P-AU-ND
+"J1 ",1,AVR-ISP-6,PinHeader_2x03_P2.54mm,N/A
+"J2 ",1,RJ45,Molex 855025008 RJ45,WM3547CT-ND
+"R1 R5 R7 R6 ",4,10K,R_0603,A130097CT-ND
+"R3 R2 ",2,1K,R_0603,"A130091CT-ND "
+"R4 ",1,1M,R_0603,"A130109CT-ND "
+"U1 ",1,LM7805_TO220,TO-220-3_Vertical,296-47192-ND
+"U2 ",1,FTDI,PinHeader_1x06_P1.27mm,N/A
+"U3 ",1,LS7366R,TSSOP-14_4.4x5mm_P0.65mm,N/A
+"U4 ",1,MCP2515-xST,TSSOP-20_4.4x6.5mm_P0.65mm,MCP2515T-I/ST
+"U5 ",1,AS5047P,TSSOP-14_4.4x5mm_P0.65mm,AS5047P-ATSMCT-ND
+"U6 ",1,TJA1050,SOIC-8_3.9x4.9mm_P1.27mm,568-10292-1-ND
+"Y1 ",1,16MHz,muRata_CSTxExxV-3Pin_3.0x1.1mm,490-17948-1-ND
+"Y2 ",1,40MHz,Abracon_ABM3-2Pin_5.0x3.2mm,535-9114-1-ND
+"Y3 ",1,20MHz,muRata_CSTxExxV-3Pin_3.0x1.1mm,490-17957-1-ND
